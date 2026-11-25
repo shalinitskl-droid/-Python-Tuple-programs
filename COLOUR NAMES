@@ -1,0 +1,72 @@
+colours = ("Red", "Blue", "Green", "Yellow", "Black", "White")
+
+print(colours)
+('Red', 'Blue', 'Green', 'Yellow', 'Black', 'White')
+
+print("original Tuple:",colours)
+original Tuple: ('Red', 'Blue', 'Green', 'Yellow', 'Black', 'White')
+
+print("Type:", type(colours))
+Type: <class 'tuple'>
+
+colour_list = list(colours)
+print("Converted List:", colour_list)
+Converted List: ['Red', 'Blue', 'Green', 'Yellow', 'Black', 'White']
+
+colour_list.append("Pink")
+print("After Append:", colour_list)
+After Append: ['Red', 'Blue', 'Green', 'Yellow', 'Black', 'White', 'Pink']
+
+colour_list.extend(["Orange", "Purple"])
+print("After Extend:", colour_list)
+After Extend: ['Red', 'Blue', 'Green', 'Yellow', 'Black', 'White', 'Pink', 'Orange', 'Purple']
+
+colour_list.insert(2, "Brown")
+print("After Insert:", colour_list)
+After Insert: ['Red', 'Blue', 'Brown', 'Green', 'Yellow', 'Black', 'White', 'Pink', 'Orange', 'Purple']
+
+colours = tuple(colour_list)
+print("Updated Tuple:", colours)
+Updated Tuple: ('Red', 'Blue', 'Brown', 'Green', 'Yellow', 'Black', 'White', 'Pink', 'Orange', 'Purple')
+
+print("First Colour:", colours[0])
+First Colour: Red
+
+print("Last Colour:", colours[-1])
+Last Colour: Purple
+
+print("Slicing:", colours[1:5])
+Slicing: ('Blue', 'Brown', 'Green', 'Yellow')
+
+print("Length:", len(colours))
+Length: 10
+
+print("Count:", colours.count("Red"))
+Count: 1
+
+print("Index:", colours.index("Yellow"))
+Index: 4
+
+print("Red Exists:", "Red" in colours)
+Red Exists: True
+
+print("Pink Not Exists:", "Pink" not in colours)
+Pink Not Exists: False
+
+new_colours = ("Silver", "Golden")
+combined = colours + new_colours
+print("Combined Tuple:", combined)
+Combined Tuple: ('Red', 'Blue', 'Brown', 'Green', 'Yellow', 'Black', 'White', 'Pink', 'Orange', 'Purple', 'Silver', 'Golden')
+
+print("Repeated Tuple:", new_colours * 2)
+Repeated Tuple: ('Silver', 'Golden', 'Silver', 'Golden')
+
+print("Reversed Tuple:", colours[::-1])
+Reversed Tuple: ('Purple', 'Orange', 'Pink', 'White', 'Black', 'Yellow', 'Green', 'Brown', 'Blue', 'Red')
+
+a, b = new_colours
+print("Colour 1:", a)
+print("Colour 2:", b)
+Colour 1: Silver
+Colour 2: Golden
+ 
